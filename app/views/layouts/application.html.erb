@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Seitai</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="nav nav-pills nav-fill">
+      <a class="nav-item nav-link active" href="/">home</a>
+      <a class="nav-item nav-link active" href="fee">料金表</a>
+      <a class="nav-item nav-link active" href="access">アクセス</a>
+      <a class="nav-item nav-link disabled" href="#">Disabled</a>
+    </nav>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>
