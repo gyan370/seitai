@@ -11,11 +11,16 @@
   </head>
 
   <body>
-    <nav class="nav nav-pills nav-fill">
-      <a class="nav-item nav-link active" href="/">home</a>
-      <a class="nav-item nav-link active" href="fee">料金表</a>
-      <a class="nav-item nav-link active" href="access">アクセス</a>
-      <a class="nav-item nav-link disabled" href="#">Disabled</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">体のお悩みならタルコフ整骨院</a>
+          <nav class="nav nav-pills nav-fill">
+            <a class="nav-item nav-link active" href="/">home</a>
+            <a class="nav-item nav-link active" href="fee">料金表</a>
+            <a class="nav-item nav-link active" href="access">アクセス</a>
+            <a class="nav-item nav-link disabled" href="#">Disabled</a>
+          </nav>
+      </div>
     </nav>
     <div class="container">
       <%= yield %>

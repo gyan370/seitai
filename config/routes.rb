@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 root to: 'homes#top'
 get 'fee' => 'homes#fee'
 get 'access' => 'homes#access'
+get 'sadbar' => 'homes#sadbar'
 end

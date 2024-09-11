@@ -5,4 +5,6 @@ class HomesController < ApplicationController
   end
   def access
   end
+  def sadbar
+  end
 end
