@@ -5,23 +5,34 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <script src="https://kit.fontawesome.com/84c338d7f7.js" crossorigin="anonymous"></script>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">体のお悩みならタルコフ整骨院</a>
-          <nav class="nav nav-pills nav-fill">
-            <a class="nav-item nav-link active" href="/">home</a>
-            <a class="nav-item nav-link active" href="fee">料金表</a>
-            <a class="nav-item nav-link active" href="access">アクセス</a>
-            <a class="nav-item nav-link disabled" href="#">Disabled</a>
-          </nav>
-      </div>
-    </nav>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">体のお悩みならタルコフ整骨院</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="nav nav-pills nav-fill" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="/">Home</a>
+                    <a class="nav-link" href="fee">料金表</a>
+                    <a class="nav-link" href="access">アクセス</a>
+                    <a class="nav-link disabled"href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </div>
+                </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+    </main>
+    <footer>
+    </footer>
     <div class="container">
       <%= yield %>
     </div>
